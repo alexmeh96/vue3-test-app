@@ -1,7 +1,14 @@
 const App = {
   data() {
     return {
-      counter: 0
+      title: 'Список заметок',
+      placeholderString: 'Введите название заметки',
+      inputValue: ''
+    }
+  },
+  methods: {
+    inputChangeHandler(event) {
+      this.inputValue = event.target.value
     }
   }
 }
